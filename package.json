@@ -1,0 +1,27 @@
+{
+  "author": "Lachlan Dowding <lachlan@permafro.st>",
+  "name": "tcp-connect.js",
+  "description": "Tests TCP connections by opening a TCP socket to the given host:port",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lachlan/ticpop.js.git"
+  },
+  "main": "lib/main.js",
+  "bin": { "tcp-connect": "./bin/tcp-connect.js" },
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "engines": {
+    "node": "~0.6.11"
+  },
+  "dependencies": {
+    "ansi-color": "0.2.1",
+    "async": "0.1.18"
+  },
+  "devDependencies": {
+    "mocha": "",
+    "should": ""
+  },
+  "optionalDependencies": {}
+}
