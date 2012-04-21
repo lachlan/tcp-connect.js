@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "git://github.com/lachlan/ticpop.js.git"
+    "url": "git://github.com/lachlan/tcp-connect.js.git"
   },
   "main": "lib/main.js",
   "bin": { "tcp-connect": "./bin/tcp-connect.js" },
