@@ -14,9 +14,10 @@ Examples
     $ tcp-connect www.apple.com:80
     success: www.apple.com:80
 	
-    $ tcp-connect www.apple.com:80 8.8.8.8:53 192.0.2.0:65535
+    $ tcp-connect www.apple.com:80 8.8.8.8:53 192.0.2.0:65535 unknown.example.com:80
     success: www.apple.com:80
     success: 8.8.8.8:53
+    failure: unknown.example.com:80 -- Error: getaddrinfo ENOENT
     failure: 192.0.2.0:65535 -- Error: connect ETIMEDOUT
 	
     $ cat test/example.txt | tcp-connect
