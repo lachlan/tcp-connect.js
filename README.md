@@ -20,14 +20,17 @@ Examples
     failure: 192.0.2.0:65535 -- Error: connect ETIMEDOUT
 	
     $ cat test/example.txt | tcp-connect
-	failure: localhost:54321 -- Error: connect ECONNREFUSED
-	success: 8.8.8.8:53
-	success: www.apple.com:80
-	failure: 192.0.2.0:65535 -- Error: connect ETIMEDOUT
+    failure: localhost:54321 -- Error: connect ECONNREFUSED
+    success: 8.8.8.8:53
+    success: www.apple.com:80
+    failure: 192.0.2.0:65535 -- Error: connect ETIMEDOUT
     
-	$ tcp-connect
-	www.google.com:80
-	success: www.google.com:80
-	www.yahoo.com:80
-	success: www.yahoo.com:80
-	^C
+    $ tcp-connect
+    www.google.com:80
+    success: www.google.com:80
+    www.yahoo.com:80
+    success: www.yahoo.com:80
+    ^C
+    
+    $ tcp-connect #www.google.com:80
+    ignored: www.google.com:80
