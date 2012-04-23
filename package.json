@@ -2,7 +2,7 @@
   "author": "Lachlan Dowding <lachlan@permafro.st>",
   "name": "tcp-connect.js",
   "description": "Tests TCP connections by opening a TCP socket to the given host:port",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "git://github.com/lachlan/tcp-connect.js.git"
