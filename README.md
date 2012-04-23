@@ -22,8 +22,10 @@ Examples
 	
     $ cat test/example.txt | tcp-connect
     failure: localhost:54321 -- Error: connect ECONNREFUSED
+    ignored: www.google.com:80
     success: 8.8.8.8:53
     success: www.apple.com:80
+    failure: unknown.example.com:80 -- Error: getaddrinfo ENOENT
     failure: 192.0.2.0:65535 -- Error: connect ETIMEDOUT
     
     $ tcp-connect
