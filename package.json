@@ -2,7 +2,7 @@
   "author": "Lachlan Dowding <lachlan@permafro.st>",
   "name": "tcp-connect.js",
   "description": "Tests TCP connections by opening a TCP socket to the given host:port",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "repository": {
     "type": "git",
     "url": "git://github.com/lachlan/tcp-connect.js.git"
@@ -16,8 +16,7 @@
     "node": "~0.6.15"
   },
   "dependencies": {
-    "ansi-color": "0.2.1",
-    "async": "0.1.18"
+    "ansi-color": "0.2.1"
   },
   "devDependencies": {
     "mocha": "",
